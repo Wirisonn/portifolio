@@ -1,0 +1,125 @@
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-main h1 {
+    background: linear-gradient(to right, #fff, #fff, #646cff);
+    -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 40px;
+
+    @media(max-width: 768px){
+        font-size: 45px;
+    }
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    @media(max-width: 768px){
+        flex-direction: column-reverse;
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-start;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
+}
+.main-info h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
+}
+
+.sub-entry{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media(max-width: 768px){
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+.sub-entry input {
+    width: 20%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+
+    @media(max-width: 768px){
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.top-entry{
+    background: linear-gradient(
+      50deg,
+      rgba(41, 40, 43, 0.4) 12%,
+      rgba(255, 255, 255, 0.1) 77%
+    );
+    box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.entry {
+    border: 0;
+    border-radius: 15px;
+    resize: none;
+    padding: 8px;
+    background: linear-gradient(
+      50deg,
+      rgba(41, 40, 43, 0.4) 12%,
+      rgba(255, 255, 255, 0.1) 77%
+    );
+    box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
+  }
+  
+.con-icon {
+    background-color: #242424;
+    padding: 13px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.con-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

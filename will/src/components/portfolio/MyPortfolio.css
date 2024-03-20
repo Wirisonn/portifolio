@@ -1,0 +1,49 @@
+.main-port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main-port h1 {
+    background: linear-gradient(to right, #fff, #fff, #646cff);
+    -webkit-background-clip: text; 
+    color: transparent;
+    margin-bottom: 40px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.content-overlay {
+    background-color: rgba(34, 240, 240, 0.69);
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 100%;
+    border-radius: inherit;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    justify-content: center;
+}
+.content-overlay h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.content-overlay:hover{
+    background-color: rgba(82, 113, 255, 0.8);
+    transform: scale(1.1);
+}
+.content-overlay:hover h3 {
+    color: #fff;
+}
+.go-link {
+    display: none;
+}
+.content-overlay:hover .go-link {
+    display: flex;
+    align-self: center;
+}

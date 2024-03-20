@@ -1,0 +1,174 @@
+.pers-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    margin-bottom: 5rem;
+}
+.bold-text {
+    font-weight: bold;
+}
+
+.pers-container h1 {
+    background: linear-gradient(to right, #fff, #fff, #646cff);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+.pers-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info p {
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.pers-sub {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
+}
+
+.pers-stats {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @media(max-width: 768px){
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.stat {
+    border: 1px solid #646cff;
+}
+.stat p {
+    text-align: center;
+}
+
+/** Skills **/
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+}
+.skill-graphs {
+    margin-top: 50px;
+}
+
+.graphs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 80px;
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/** Experience **/
+.main-ex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ex-info {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
+}
+
+.experience{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+.experience h3, p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sub-ex h3, p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sub-ex {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.role-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.spacer {
+    margin-left: 5px;
+}
+
+.role-text p {
+   font-weight: 300;
+   font-size: 14px;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-line{
+    width: 1px; 
+    height: 80px; 
+    background-color: grey;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.ex-icon {
+    background-color: #242424;
+    padding: 13px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
